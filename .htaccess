@@ -1,0 +1,4 @@
+AddDefaultCharset UTF-8
+DirectoryIndex index.php index.shtml index.html
+RewriteEngine on
+#Deny from all
