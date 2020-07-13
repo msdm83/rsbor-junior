@@ -24,14 +24,16 @@ $(document).ready( function() {
 			data["start"] = $(window).height();
 			if (data.mobile) data["start"] *= 1.5;
 		}
+		
+		console.log([ cur, data["start"]])
 		if (cur >= data["start"]) {
-			if (data.cur > cur) {
+			/*if (data.cur > cur || 1) {*/
 				if (!$('.top').hasClass('fix')) $('.top').addClass('fix').css('height', 0).animate({'height':80}, 120, function(){
 					if (!$('.top').hasClass('fix')) $('.top').css('height', '');
 				});
-			} else {
+			/*} else {
 				if ($('.top').hasClass('fix')) $('.top').removeClass('fix').css('height', '');
-			}
+			}*/
 		} else {
 			if ($('.top').hasClass('fix')) $('.top').removeClass('fix').css('height', '');
 		}
