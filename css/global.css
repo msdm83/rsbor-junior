@@ -185,7 +185,7 @@ a.und:hover {
 	width: 1200px;
 	margin: 0 auto;
 }
-.head, .b-head, .slide-txt, .anketa, .donate li, .game .title span, .lay .title {
+.head, .b-head, .slide-txt, .anketa, .donate li, .game .title span, .lay .title, .top .tag {
 	font-family: Rex, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1406,15 +1406,23 @@ svg.svg-mobile {
 .anketa {
 	position: absolute;
 	left: calc(50% - 295px);
-	top: calc(50% - 85px);
+	top: calc(50% - 120px);
 }
 .anketa .cell {
 	width: 590px;
-	height: 170px;
+	height: 240px;
 	background: #fff;
 	font-size: 36px;
 	color: #1ab47f;
-	line-height: 1.25;
+	line-height: 2;
+}
+.anketa .cell a{
+	padding: 19px 30px;
+    border-radius: 10px;
+    background: #fbd150;
+    color: #000;
+    position: relative;
+    font-size: 24px;
 }
 .anketa .cell a:hover {
 	color: #168bc2;
@@ -1698,6 +1706,14 @@ a.mail {
 	background: #168bc2;
 	color: #fff;
 }
+
+.top .tag {
+	position: absolute;
+	top:-50px;
+	color:rgb(36,146,198);    
+    font-size: 46px;
+	width: 100%;
+}
 @media screen and (min-width: 999px) and (max-width: 1180px) {
 	.slide-txt {
 		display: none;
@@ -1778,6 +1794,10 @@ a.mail {
 	.game .title span {
 		font-size: 38px;
 		margin: 4px 0 0 -24px;
+	}
+	.top .tag{
+		top:-34px;	
+		font-size: 32px;	
 	}
 	.count {
 		right: 24px;
