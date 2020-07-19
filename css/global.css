@@ -2393,24 +2393,25 @@ a.mail {
 	.how .b-slider {
 		margin: 0 20px;
 		padding: 107px 0 40px;
+		overflow-x: auto;
 	}
 	.how .arr {
 		margin-top: 3px;
 		z-index: 1000;
 	}
 	.how .items {
-		width: auto;
 		height: 150px;
 		position: relative;
 		padding-top: 0;
+		display:table;
 	}
 	.how .item {
-		position: absolute;
+		position: relative;
 		left: 0;
 		top: 0;
-		width: 100%;
 		height: 150px;
 		margin: 0 auto !important;
+		display: table-cell;
 	}
 	.how .item p {
 		line-height: 1.33;
