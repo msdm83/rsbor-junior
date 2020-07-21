@@ -1181,42 +1181,43 @@ svg.svg-mobile {
 .final input[type=text]:-moz-placeholder           {color: #000; opacity: 1; }
 .final input[type=text]:-ms-input-placeholder      {color: #000; opacity: 1; }
 /* Screen # 3 ---------------------------------------------- */
-.questions .items {
-	float: left;
-	width: 685px;
+.questions a.button{display: inline-block;float: right;padding-left: 10px; padding-right: 10px;}
+.questions .items {	
+	width: 100%;
 }
 .questions .item {
-	margin-top: 50px;
+	width:33%;
+	display: inline-block;
+	padding:20px;
+	text-align: center;
 }
-.questions .item.first {
-	margin-top: 0;
+.questions .item .im{
+	height: 250px;
+	width: 100%;
+	overflow: hidden;	
 }
+
 .questions .txt {
-	width: 485px;
 	margin-top: 20px;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 1.33;
 }
 .questions .im IMG {
-	width: 100%;
-}
-.questions .block {
-	position: absolute;
-	width: 335px;
 	height: 100%;
-	left: 750px;
-	top: 0;
+}
+.questions .block {	
+	margin-top:50px;
+	line-height: 1.7;
 }
 .questions .info {
-	position: relative;
-	z-index: 2;
+	width: 69%;
 	font-size: 17px;
-	line-height: 1.76;
+	padding-right: 30px;
+	display: inline-block;
 }
 .questions .info H2 {
 	font-size: 23px;
-	line-height: 1.3;
 	font-weight: 700;
 }
 .questions .info P {
@@ -1224,11 +1225,10 @@ svg.svg-mobile {
 }
 .questions .disclaimer {
 	font-size: 14px;
-	line-height: 1.5;
-	position: absolute;
-	left: 0;
-	bottom: 44px;
-	width: 100%;
+	width: 30%;
+	border: 1px solid #1ab47f;
+	display: inline-block;
+	padding:20px;
 }
 .questions .disclaimer strong {
 	font-size: 16px;
@@ -1908,12 +1908,8 @@ a.mail {
 		content: ' ';
 	}
 	/* questions */
-	.questions .items {
-		width: 545px;
-	}
-	.questions .block {
-		left: 590px;
-		width: 245px;
+	.questions .items .item{
+		width: 49%;
 	}
 	.questions .txt {
 		margin-top: 14px;
@@ -2420,11 +2416,10 @@ a.mail {
 		margin: 0 20px;
 	}
 	.questions .items {
-		float: none;
-		width: auto;
+		
 	}
 	.questions .item {
-		margin-top: 40px;
+		width: 100%;
 	}
 	.questions .txt {
 		width: auto;
@@ -2434,11 +2429,8 @@ a.mail {
 	.questions .info {
 		font-size: 14px;
 	}
-	.questions .block {
-		position: static;
-		width: auto;
-		height: auto;
-		margin-top: 40px;
+	.questions .block .info{
+		width: 100%
 	}
 	.questions .info H2 {
 		font-size: 20px;
@@ -2447,9 +2439,9 @@ a.mail {
 		padding-top: 15px;
 	}
 	.questions .disclaimer {
-		position: static;
 		font-size: 12px;
 		margin-top: 10px;
+		width: 100%;
 	}
 	.questions .disclaimer P {
 		padding-top: 10px;
@@ -2594,7 +2586,7 @@ a.mail {
 	}
 	.anketa {
 		position: absolute;
-		left: 10vw;
+	
 		top: calc(50% - 45px);
 	}
 	.anketa .cell {
