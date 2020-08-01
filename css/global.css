@@ -1197,7 +1197,15 @@ svg.svg-mobile {
 	text-decoration: none;
 	cursor: pointer;
   }
-
+/* The Final close button */
+  .final-btn-close {
+	font-size: 15px;
+	color:white;
+	background-color: black;
+	position: absolute;
+	left: 5px;
+	top: 20px;
+}
 /* Screen # 3 ---------------------------------------------- */
 .questions a.button{display: inline-block;float: right;padding-left: 10px; padding-right: 10px;}
 .questions .items {	
