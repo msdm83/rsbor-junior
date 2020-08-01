@@ -1180,6 +1180,24 @@ svg.svg-mobile {
 .final input[type=text]::-moz-placeholder          {color: #000; opacity: 1; }
 .final input[type=text]:-moz-placeholder           {color: #000; opacity: 1; }
 .final input[type=text]:-ms-input-placeholder      {color: #000; opacity: 1; }
+
+/* The Final close X-element */
+.close-final {
+	color:#aaaaaa;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 40px;
+	font-weight: bold;
+  }
+  
+  .close-final:hover,
+  .close-final:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
 /* Screen # 3 ---------------------------------------------- */
 .questions a.button{display: inline-block;float: right;padding-left: 10px; padding-right: 10px;}
 .questions .items {	

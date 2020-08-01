@@ -294,6 +294,11 @@ $(document).ready( function() {
 		});
 		return false;
 	})
+	
+	// When the user clicks on <span> (x), close the final
+		$('.final .close-final').click(function(){
+			$('.final').hide();
+		});
 
 	if (data.mobile) {
 		$('.b-slider').not('.done').each(function() {
