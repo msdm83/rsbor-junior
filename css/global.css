@@ -179,6 +179,10 @@ a.und:hover {
 	  -o-filter: grayscale(100%);
 	  filter: grayscale(100%);
 }
+h2 {
+	font-size: 23px;
+	font-weight: 700;
+}
 /* common ---------------------------------------------- */
 .main {
 	position: relative;
@@ -1955,6 +1959,50 @@ a.mail {
 		bottom: 34px;
 	}
 }
+.best-practice{
+	padding-bottom: 20px;
+}
+	.best-practice .item{
+		padding:0;		
+	}
+	.best-practice .item.green{
+		background-color: rgb(104,184,115);		
+	}
+	.best-practice .item.yellow{
+		background-color: rgb(251,225,102);		
+	}
+		.best-practice div h2{
+			padding-top:30px;
+			text-align:center;
+		}
+		.best-practice div ul{
+			font-size: 17px;
+			margin:0 auto;	
+			max-width: 940px;
+			text-align: left;
+		}
+			.best-practice div ul li{
+				margin:20px	;
+				line-height: 1.5em;				
+			}
+			.best-practice div ul li::before{padding-left:100px}
+	.best-practice> div .cover{
+		height: 172px;	
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.best-practice> div .cover.green{
+		background-image: url(../images/best-practice-bg-green.png);
+	}
+	.best-practice> div .cover.yellow{
+		height: 179px;
+		background-image: url(../images/best-practice-bg-yellow.png);
+		
+	}
+	.best-practice> div .cover.rotate{ transform: rotate(180deg);
+	margin:-21px;
+}
+		
 @media screen and (max-width: 960px) {
 	/* common */
 	body {
