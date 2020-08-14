@@ -363,7 +363,7 @@ nav li a:hover {
 	overflow: hidden;
 }
 .game .im {
-	position: fixed;
+	
 	left: 0;
 	top: 0;
 	z-index: 1;
