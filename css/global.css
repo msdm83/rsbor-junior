@@ -1203,12 +1203,14 @@ svg.svg-mobile {
   }
 /* The Final close button */
   .final-btn-close {
-	font-size: 15px;
-	color:white;
-	background-color: black;
-	position: absolute;
-	left: 5px;
+	margin-left: 25px;
+	text-decoration: underline;
 	top: 20px;
+	cursor: pointer;
+}
+.final-btn-close:hover {
+	text-decoration: none;
+	transition-duration: 0.4s;
 }
 /* Screen # 3 ---------------------------------------------- */
 .questions a.button{display: inline-block;float: right;padding-left: 10px; padding-right: 10px;}
