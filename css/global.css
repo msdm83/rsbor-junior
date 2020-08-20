@@ -184,6 +184,9 @@ h2 {
 	font-size: 23px;
 	font-weight: 700;
 }
+p{
+	font-size: 17px;
+}
 /* common ---------------------------------------------- */
 .main {
 	position: relative;
@@ -1198,7 +1201,8 @@ svg.svg-mobile {
 .questions .disclaimer strong {
 	font-size: 16px;
 }
-.questions .disclaimer P {
+.questions .disclaimer p {
+	font-size: 14px;
 	padding-top: 8px;
 	margin-top: 10px;
 	border-top: 1px solid #e1e1e1;
@@ -1378,7 +1382,9 @@ svg.svg-mobile {
 }
 .anketa .cell {
 }
-.become  p{font-size: 17px;
+.become  p,
+.support p{
+	font-size: 17px;
     line-height: 1.5em;
     padding: 0 30px 30px;
 }
@@ -1541,7 +1547,7 @@ svg.svg-mobile {
 }
 .foot .main > div .button{
 	display: inline-block;
-	margin:10px auto 0;
+	margin:20px auto 0;
 	text-decoration: none;
 	padding:7px 20px;
 }
@@ -1566,6 +1572,8 @@ a.mail {
 	line-height: 1.2;
 	color: #000;
 	width: 100%;
+	border-top: 1px solid #eee;
+}
 }
 /* Lay styles ---------------------------------------------- */
 .laybg {
