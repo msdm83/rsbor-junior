@@ -884,7 +884,7 @@ svg.svg-mobile {
 	padding: 52px 0 0 2px;
 }
 .why .items {
-	margin: 42px 0 110px;
+	margin: 42px 0 0px;
 	text-align: center;
 }
 .why .item {
@@ -917,27 +917,6 @@ svg.svg-mobile {
 .why5 .ico {
 	background-image: url("../images/ico_zavod.png");
 }
-/* how */
-.how {
-	position: relative;
-	background: #1ab47f;
-	margin-top: 167px;
-}
-.how .b-head {
-	position: absolute;
-	z-index: 3;
-	left: calc(50% - 75px);
-	top: -57px;
-	width: 149px;
-	height: 132px;	
-}
-.how .b-head P {
-	position: relative;
-	z-index: 2;
-	font-size: 27px;
-	line-height: .93;
-	padding: 51px 0 0 13px;
-}
 .download {
 	position: absolute;
 	z-index: 2;
@@ -951,53 +930,6 @@ svg.svg-mobile {
 	color: #1ab47f;
 	line-height: 1.06;
 	font-weight: 700;
-}
-.how .items {
-	width: 1230px;
-	height: 378px;
-	margin: 0 auto;
-	padding-top: 107px;
-}
-.how .triangle {
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: 2;
-	border: 100vw solid transparent;
-	border-bottom: 0px solid transparent;
-	border-right: 0px solid transparent;
-	border-top: 50px solid #fff;
-}
-.how .item {
-	float: left;
-	font-size: 16px;
-	font-weight: 700;
-	color: #fff;
-	line-height: 1.63;
-	text-align: center;
-	width: 193px;
-}
-.how .item:nth-child(1) {
-	margin: 0 40px;
-}
-.how .item:nth-child(2) {
-	margin-right: 50px;
-}
-.how .item:nth-child(4) {
-	width: 255px;
-	margin-right: 20px;
-}
-.how .num {
-	margin: 0 auto 24px;
-	border: solid 3px #fbd150;
-	width: 90px;
-	height: 90px;
-	font-size: 45px;
-	font-weight: 500;
-	color: #fbd150;
-	text-align: center;
-	border-radius: 50%;
-	padding-top: 5px;
 }
 /* links */
 .links {
@@ -1882,17 +1814,13 @@ a.mail {
 		height: 65px;
 	}
 	/* why */
-	.why .b-head, .how .b-head {
+	.why .b-head {
 		width: 121px;
 		height: 107px;
 	}
 	.why .b-head P {
 		font-size: 20px;
 		padding: 38px 0 0 32px;
-	}
-	.how .b-head p {
-		font-size: 20px;
-		padding: 38px 0 0 44px;
 	}
 	.fill {
 		left: 0;
@@ -1901,43 +1829,6 @@ a.mail {
 		font-size: 14px;
 		line-height: 1.43;
 		margin: 0 27px;
-	}
-	.how .items {
-		width: auto;
-	}
-	.how .num {
-		width: 65px;
-		height: 65px;
-		line-height: 1;
-		margin-bottom: 
-	}
-	.how .items {
-		padding-top: 80px;
-		width: 960px;
-		height: 348px;
-		margin: 0 auto;
-	}
-	.how .item {
-		width: 144px;
-	}
-	.how .item:nth-child(1) {
-		margin: 0 0 0 23px;
-	}
-	.how .item:nth-child(2) {
-		margin: 0 46px;
-	}
-	.how .item:nth-child(4) {
-		width: 144px;
-		margin: 0 46px;
-	}
-	.how .item p {
-		font-size: 14px;
-	}
-	.how .item:nth-child(4) br {
-		display: none;
-	}
-	.how .item i:after {
-		content: ' ';
 	}
 	/* questions */
 	.questions .items .item{
@@ -1974,8 +1865,10 @@ a.mail {
 		background-color: rgb(251,225,102);		
 	}
 		.best-practice div h2{
-			padding-top:30px;
+			padding:30px 0px;
 			text-align:center;
+			text-transform: uppercase;
+
 		}
 		.best-practice div ul{
 			font-size: 17px;
@@ -2004,7 +1897,19 @@ a.mail {
 	.best-practice> div .cover.rotate{ transform: rotate(180deg);
 	margin:-21px;
 }
-		
+
+.best-practice.resources .triangle.bottom{
+	border: 100vw solid transparent;
+	border-top: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 50px solid #fff;
+}
+.best-practice.resources .triangle.top1{
+	border: 100vw solid transparent;
+	border-bottom: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 80px solid #fff;
+}
 @media screen and (max-width: 960px) {
 	/* common */
 	body {
@@ -2454,39 +2359,7 @@ a.mail {
 	.why .arr.next {
 		right: 20px;
 	}
-	/* how */
-	.how {
-		margin-top: 80px;
-		padding-bottom: 20px;
-	}
-	.how .b-head {
-		margin-left: 34px;
-	}
-	.how .b-slider {
-		margin: 0 20px;
-		padding: 107px 0 40px;
-	}
-	.how .arr {
-		margin-top: 3px;
-		z-index: 1000;
-	}
-	.how .items {
-		width: auto;
-		height: 150px;
-		position: relative;
-		padding-top: 0;
-	}
-	.how .item {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 150px;
-		margin: 0 auto !important;
-	}
-	.how .item p {
-		line-height: 1.33;
-	}
+
 	/* questions */
 	.questions .main {
 		margin: 0 20px;
