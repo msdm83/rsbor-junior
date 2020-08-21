@@ -1493,6 +1493,9 @@ svg.svg-mobile {
 	width: auto;
 	float: right;
 }
+.donate .pay-type input{
+	width:auto
+}
 /*
 .donate li {
 	display: inline-block;

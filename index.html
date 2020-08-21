@@ -485,7 +485,7 @@
 					<div class="head">Поддержи деньгами</div>
 					<form method="post" id="payForm" action="https://money.yandex.ru/eshop.xml" class="form">
 						<input type="hidden" class="regular-input" name="paymentType" value="AC" />
-						<input type="hidden" id="rebillingOn" name="rebillingOn" value="0" />
+						<input type="hidden" id="rebillingOn" name="rebillingOn" value="1" />
 						<input type="hidden" name="shopid" value="97532" />
 						<input type="hidden" name="scid" value="88963" />
 						<input type="hidden" name="shopSuccessUrl" value="https://rsbor.ru/oplata-proshla-uspeshno/" />
@@ -494,9 +494,8 @@
 						<input type="hidden" name="sum" value="" />
 						<input type="hidden" value="1" name="test">
 						<input type="hidden" checked="checked" required="" value="Y" name="agreement">
-						<input type="hidden" name="pay-type" value="once">
-						<!--rebillingOn - 1--><!--pay-type - regular-->
-	
+						<input type="hidden" name="pay-type" value="regular">
+
 						<ul>
 							<li class="active">300</li>
 							<li>500</li>
@@ -506,9 +505,16 @@
 						</ul>
 
 						<input type="text" name="custName" placeholder="Имя"/>
-						<input type="text" name="customerNumber" class="req" placeholder="Email*"/>							
+						<input type="text" name="customerNumber" class="req email" placeholder="Email*"/>							
 						<textarea wrap="soft" name="orderDetails" placeholder="Комментарий"></textarea>						
+						
 						<input type="submit" value="Отправить" class="button"/>
+						<div class="pay-type">
+							<input type="radio" name="pay-type-radio"  value="once" id="pay-type-once">
+							<label for="pay-type-once">Разово</label>
+							<input type="radio" name="pay-type-radio" checked id="pay-type-regular" value="regular">
+							<label for="pay-type-regular">Ежемесячно</label>
+						</div>
 					</form>
 				</div>
 				<div>

@@ -357,13 +357,20 @@ $(document).ready( function() {
 	 		$('.donate .inp.numonly').val('');
 	 	}
 	 });
+
+	 
+	 $('.donate input[name="pay-type-radio"]').change(function(){
+		$(".donate form input[name='rebillingOn']").val("once"==this.value?0:1);			
+		$(".donate form input[name='pay-type']").val(this.value);	 
+	});
+
 	 $('.donate form').submit(function(){
 		var err = false;
 		var obj = $(this);
 		obj.find('.err').removeClass('err');
 		obj.find('.req').each(function() {
-			if ($(this).val() == '' 
-				|| (($(this).hasClass('email')) && (!validateEmail($(this).val())))) {
+			if (($(this).hasClass('email') && !validateEmail($(this).val())) || $(this).val() == '')
+			{
 				$(this).addClass('err');
 				err = true;
 			}
