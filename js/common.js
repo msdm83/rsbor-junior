@@ -24,8 +24,7 @@ $(document).ready( function() {
 			data["start"] = $(window).height();
 			if (data.mobile) data["start"] *= 1.5;
 		}
-		
-		console.log([ cur, data["start"]])
+
 		if (cur >= data["start"]) {
 			/*if (data.cur > cur || 1) {*/
 				if (!$('.top').hasClass('fix')) $('.top').addClass('fix').css('height', 0).animate({'height':80}, 120, function(){
@@ -334,9 +333,10 @@ $(document).ready( function() {
 		}
 	});
 	 $('.inp.phone').mask("+7 (999) 999-9999");
+
 	 $('.donate .inp.numonly').keyup(function(){
 	 	var val = parseInt($(this).val());
-	 	$('.donate li').removeClass();
+	 	//$('.donate li').removeClass();
 	 	if (val > 0) {
 	 		$('.donate li').each(function() {
 				if ($(this).html() == val) {
@@ -362,14 +362,24 @@ $(document).ready( function() {
 		var obj = $(this);
 		obj.find('.err').removeClass('err');
 		obj.find('.req').each(function() {
-			if (($(this).val() == '') || (($(this).hasClass('email')) && (!validateEmail($(this).val())))) {
-				$(this).parent().addClass('err');
+			if ($(this).val() == '' 
+				|| (($(this).hasClass('email')) && (!validateEmail($(this).val())))) {
+				$(this).addClass('err');
 				err = true;
 			}
 		});
+		
 		if (!err) {
-			var sum = parseInt($('input[name=otherSum]').val());
-			if (sum == 0) sum = $('.donate li.active').html();
+			//take active item
+			let active = $('.donate li.active');
+			var sum;
+			if(active.attr("other")=="true"){
+				sum = parseInt($('input[name=otherSum]').val());
+			}
+			else{
+				sum = $('.donate li.active').html();
+			}
+		
 			$('input[name=sum]').val( sum );
 			return true;
 		}

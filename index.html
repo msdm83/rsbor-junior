@@ -481,49 +481,60 @@
 				Деятельность движения стимулирует появление и развитие новой системы обращения с отходами в России, основанной на принципах 3R (reduce, reuse, recycle – уменьшай, используй повторно, перерабатывай), и формирует осознанное, рациональное отношение людей к природным ресурсам.
 			</p>
 			<div class="donate">
-				<div class="head">Поддержи деньгами</div>
-				<form method="post" id="payForm" action="https://money.yandex.ru/eshop.xml" class="form">
-					<input type="hidden" class="regular-input" name="paymentType" value="AC" />
-				    <input type="hidden" id="rebillingOn" name="rebillingOn" value="0" />
-				    <input type="hidden" name="shopid" value="97532" />
-				    <input type="hidden" name="scid" value="88963" />
-				    <input type="hidden" name="shopSuccessUrl" value="https://rsbor.ru/oplata-proshla-uspeshno/" />
-				    <input type="hidden" name="shopFailUrl" value="https://rsbor.ru/oshibka-oplatyi/" />
-				    <input type="hidden" name="shopDefaultUrl" value="http://hat-trick.ru/1/rsbor/" />
-				    <input type="hidden" name="sum" value="" />
-				    <input type="hidden" value="1" name="test">
-				    <input type="hidden" checked="checked" required="" value="Y" name="agreement">
-				    <input type="hidden" name="pay-type" value="once">
+				<div>
+					<div class="head">Поддержи деньгами</div>
+					<form method="post" id="payForm" action="https://money.yandex.ru/eshop.xml" class="form">
+						<input type="hidden" class="regular-input" name="paymentType" value="AC" />
+						<input type="hidden" id="rebillingOn" name="rebillingOn" value="0" />
+						<input type="hidden" name="shopid" value="97532" />
+						<input type="hidden" name="scid" value="88963" />
+						<input type="hidden" name="shopSuccessUrl" value="https://rsbor.ru/oplata-proshla-uspeshno/" />
+						<input type="hidden" name="shopFailUrl" value="https://rsbor.ru/oshibka-oplatyi/" />
+						<input type="hidden" name="shopDefaultUrl" value="http://hat-trick.ru/1/rsbor/" />
+						<input type="hidden" name="sum" value="" />
+						<input type="hidden" value="1" name="test">
+						<input type="hidden" checked="checked" required="" value="Y" name="agreement">
+						<input type="hidden" name="pay-type" value="once">
+						<!--rebillingOn - 1--><!--pay-type - regular-->
+	
+						<ul>
+							<li class="active">300</li>
+							<li>500</li>
+							<li>1000</li>
+							<li other="true"><input type="text" name="otherSum" class="numonly" placeholder="Другая сумма"></li>
+							РУБ
+						</ul>
 
-					<p>Выберите сумму пожертвования:</p>
-					<ul><li class="active">300</li><li>500</li><li>1000</li></ul>
-					<div class="clr"></div>
-					<div class="item">
-						<div class="txt">Другая сумма:</div>
-						<div class="border"><input type="text" name="otherSum" class="inp numonly"></div>
+						<input type="text" name="custName" placeholder="Имя"/>
+						<input type="text" name="customerNumber" class="req" placeholder="Email*"/>							
+						<textarea wrap="soft" name="orderDetails" placeholder="Комментарий"></textarea>						
+						<input type="submit" value="Отправить" class="button"/>
+					</form>
+				</div>
+				<div>
+					<div class="head">Вместе мы помогаем:</div>
+					<ul>
+						<li><i class="fas fa-check-circle"></i>Начать работу новым переработчикам</li>
+						<li><i class="fas fa-check-circle"></i>Появляться новым контейнерам во дворах</li>
+						<li><i class="fas fa-check-circle"></i>Проводить мероприятия для детей и взрослых</li>
+						<li><i class="fas fa-check-circle"></i>Менять экологическое законодательство</li>
+						<li><i class="fas fa-check-circle"></i>Противостоять строительству мусоросжигательных заводов в России</li>
+					</ul>
+					<div class="trust">
+						<h3>Нам можно доверять</h3>
+						<div>
+							Мы сотрудничаем с проверенными краудфандинговыми платформами, где даже самое небольшое пожертвование становится частью системной благотворительности.
+						</div>
+						<br/>
+						<div>
+							Мы регулярно предоставляем отчеты о деятельности для этих платформ и наших жертвователей. Вдохновляйтесь нашими ежемесячными отчетами об изменениях и проделанной работе!
+						</div>
 					</div>
-					<div class="item">
-						<div class="txt">ФИО<span>*</span>:</div>
-						<div class="border"><input type="text" name="custName" class="inp req"></div>
-					</div>
-					<div class="item">
-						<div class="txt">Email<span>*</span>:</div>
-						<div class="border"><input type="text" name="customerNumber" class="inp req"></div>
-					</div>
-					<div class="item">
-						<div class="txt">Комментарий:</div>
-						<div class="border big"><textarea wrap="soft" name="orderDetails" class="inp"></textarea></div>
-					</div>
-					<input type="submit" value="Помочь деньгами" class="button">
-				</form>
+					
+				</div>
+
 			</div>
-			<div class="head">Нам можно доверять</div>
-			<p>
-				Мы сотрудничаем с проверенными краудфандинговыми платформами, где даже самое небольшое пожертвование становится частью системной благотворительности.
-			</p>
-			<p>
-				Мы регулярно предоставляем отчеты о деятельности для этих платформ и наших жертвователей. Вдохновляйтесь нашими ежемесячными отчетами об изменениях и проделанной работе!
-			</p>
+			
 		</div>
 	</div>
 	<div class="screen become">
@@ -575,19 +586,15 @@
 		</div>
 		<div>
 			<p class="title">Связаться с нами</p>
+			<div>Горячая линия по внедрению раздельного сбора отходов работает с 10:00 до 15:00 по будням.</div>
 			<ul>
-				<li>
-					<p>Горячая линия по внедрению придомового раздельного сбора отходов: 
-						<a href="tel:+7(812)603-79-83">+7(812)603-79-83</a>
-						<br/>Линия работает с 10:00 до 15:00 по будням.
-					</p>					
+				<li>					
+					<a href="tel:+7(812)603-79-83"><i class="fa fa-phone-square" aria-hidden="true"></i>+7(812)603-79-83</a>					
 				</li>
-				<li><a href="#feedback" class="button">Задать вопрос</a></li>
-			</ul>
+				<li><a href="mailto:rsbor.ru@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>Написать нам</a></li>
+				<li><a href="#feedback"><i class="fa fa-question-circle" aria-hidden="true"></i>Задать вопрос</a></li>
+			</ul>	
 			
-			
-			<a href="mailto:rsbor.ru@gmail.com" class="mail"></a>
-
 		</div>
 		
 		<div class="copy">
