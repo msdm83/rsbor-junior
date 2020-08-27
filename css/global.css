@@ -1614,6 +1614,7 @@ svg.svg-mobile {
 	.foot .main ul li i{
 		margin-right: 5px;
 	}
+	.foot .main > div ul li a{font-size: 17px;}
 .foot .main > div .title{
 	font-size: 18px;
 	text-transform: uppercase;
@@ -1621,7 +1622,7 @@ svg.svg-mobile {
 	padding-bottom: 20px;
 	color:#444;
 }
-.foot .main > div.rsbor a{
+.foot .main > div.rsbor a.tc{
 	display: block;
 	line-height: 2.5em;
 	font-size: 20px;	
