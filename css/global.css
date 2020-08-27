@@ -56,7 +56,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	min-width:360px ;
+	min-width:320px ;
 }
 ol, ul {
 	list-style: none;
@@ -1405,7 +1405,7 @@ svg.svg-mobile {
 	background: rgb(104,184,115);
 	text-align: center;
 	color: #fff;
-	padding: 43px 0;
+	padding: 43px 20px 20px 20px;
 }
 .donate .head {
 	padding: 0 0 20px 0;
@@ -1431,9 +1431,6 @@ svg.svg-mobile {
 }
 .donate ul li i{margin-right:10px;}
 
-.donate form ul{
-	margin:0 0 20px 0;
-}
 .donate form ul li{
 	display: inline-block;
 	padding:10px 0;
@@ -1443,7 +1440,7 @@ svg.svg-mobile {
 	border:3px solid #fbd150;
 	text-align:center;	
 	width: 80px;
-	margin-right: 5px;
+	margin:0 5px 10px 0;
 }
 
 .donate form ul li.active,
@@ -1593,6 +1590,7 @@ svg.svg-mobile {
 	background: #168bc2;
 }
 .foot .main > div{
+	border-top:1px solid #EEE;
 	display: inline-block;
 	height: 200px;
 	width: 33%;
@@ -1657,12 +1655,12 @@ a.mail {
 	width: 26px;
 }
 .foot .main > div.copy {
-	padding-top: 55px;
 	font-size: 13px;
 	line-height: 1.2;
 	color: #000;
 	width: 100%;
 	border-top: 1px solid #eee;
+	height: auto;
 }
 /* Lay styles ---------------------------------------------- */
 .laybg {
